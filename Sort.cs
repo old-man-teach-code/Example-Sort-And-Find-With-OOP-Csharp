@@ -108,6 +108,30 @@ class Program
     {
         return users.Where(user => user.Name.IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
     }
+
+    // thuật toán Selection Sort (sắp xếp chọn) sắp xếp danh sách users theo thứ tự tăng dần của chỉ số nước tiêu thụ tháng trước (LastMonthWaterMeter)
+    static void SelectionSortUsersByLastMonthWaterMeter(List<User> users)
+    {
+        int n = users.Count;
+
+        for (int i = 0; i < n - 1; i++)
+        {
+            // Find the minimum element in unsorted array
+            int minIndex = i;
+            for (int j = i + 1; j < n; j++)
+            {
+                if (users[j].LastMonthWaterMeter < users[minIndex].LastMonthWaterMeter)
+                {
+                    minIndex = j;
+                }
+            }
+
+            // Swap the found minimum element with the first element
+            User temp = users[minIndex];
+            users[minIndex] = users[i];
+            users[i] = temp;
+        }
+    }
 }
 
 
