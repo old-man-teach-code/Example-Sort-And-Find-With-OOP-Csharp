@@ -52,11 +52,11 @@ namespace User
         {
             Console.Write("Enter user u want to delete: ");
             string name = Console.ReadLine();
-            foreach (var item in list)
+            for (int i = 0; i < list.Count; i++)
             {
-                if (item.Username == name)
+                if(list[i].Username == name)
                 {
-                    item.Delete();
+                    list.RemoveAt(i);
                 }
             }
         }
