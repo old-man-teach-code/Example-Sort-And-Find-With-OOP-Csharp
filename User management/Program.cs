@@ -17,8 +17,6 @@ namespace User
             list.Output();
             list.Delete();
             list.Output();
-
-
         }
     }
 }

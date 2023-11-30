@@ -49,10 +49,7 @@ namespace User
         }
         public void Delete()
         {
-            
+
         }
-
-
-
     }
 }
