@@ -5,7 +5,7 @@ Thuật toán Bubble Sort là một thuật toán sắp xếp đơn giản. Nó 
 
 ## Flowchart
 
-<img src="https://www.researchgate.net/profile/Scott-Grigsby/publication/325530258/figure/fig1/AS:680182054649856@1539179447463/Flow-chart-for-a-simple-bubble-sort.png" width="600">
+<img src="Flow-chart-for-a-simple-bubble-sort.png" width="600">
 
 ## Pseudocode
 ```
